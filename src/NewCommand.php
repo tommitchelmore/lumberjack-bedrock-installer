@@ -335,7 +335,7 @@ class NewCommand extends Command
         file_put_contents($configPath, $appConfig);
     }
 
-    protected function runCommands(array $commands, callable $callback = null, $timeout = 3600)
+    protected function runCommands(array $commands, ?callable $callback = null, $timeout = 3600)
     {
         foreach ($commands as $command) {
             // print when in debug mode -vvv
